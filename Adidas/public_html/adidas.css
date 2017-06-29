@@ -1,0 +1,133 @@
+body, html{
+    margin: 0;
+}
+header img{
+    width: 70px;
+    height: 60px;
+}
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.espacio{
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+}
+.espacio1{
+    width: 300px;
+}
+
+.headline h1 {
+    font-size: 130px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+.alineacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headline h2 {
+    font-size: 77px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+.labeled{
+    margin: 0;
+}
+.imagen{
+    width: 50%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+header nav{
+    text-decoration: none;
+    color: white;
+}
+.arreglo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-color: black;
+}
+.ancho{
+    margin-top: 60px;
+    width: 100%;
+}
+.space{
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.portfolio-item a,img{
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-item p{
+    width: 320px;
+    color: black
+}
+.portfolio-item h3 a{
+    color: black;
+}
+.portfolio-item a img{
+    width: 300px;
+    height: 300px;
+}
+.portfolio-item h3 a:hover{
+    color: #5e5e5e;
+    text-decoration: none;
+}
+.row{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@media only screen and (min-width: 750px) and (max-width: 990px) {
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+    .portfolio-item{
+        margin-bottom: 70px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: nowrap;
+    } 
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio-item{
+        margin-bottom: 70px;
+    }
+}
